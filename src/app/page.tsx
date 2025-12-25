@@ -1063,7 +1063,7 @@ export default function Home() {
                                 <img src="/tuxmate.png" alt="TuxMate Logo" className="w-16 h-16 sm:w-[72px] sm:h-[72px] object-contain shrink-0" />
                                 <div className="flex flex-col justify-center">
                                     <h1 className="text-xl sm:text-2xl font-bold tracking-tight" style={{ transition: 'color 0.5s' }}>TuxMate</h1>
-                                    <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-widest" style={{ transition: 'color 0.5s' }}>Linux App Installer</p>
+                                    <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-widest" style={{ transition: 'color 0.5s' }}>The Linux Bulk App Installer.</p>
                                     <div className="flex items-center gap-3 mt-1.5">
                                         <p className="text-xs text-[var(--text-muted)]" style={{ transition: 'color 0.5s' }}>Select apps • <span className="hidden sm:inline">Arrow keys + Space</span></p>
                                         <span className="text-[var(--text-muted)] opacity-30">|</span>
