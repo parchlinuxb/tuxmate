@@ -241,6 +241,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 - [ ] Expand application catalog (200+)
 - [ ] Dotfiles integration
 
+<details>
+<summary><h4>🔗 Related Projects</h4></summary>
+
+- **[LinuxToys](https://github.com/psygreg/linuxtoys)** – User-friendly collection of tools for Linux with an intuitive interface
+- **[Nixite](https://github.com/aspizu/nixite)** – Generates bash scripts to install Linux software, inspired by Ninite
+- **[tuxmate-cli](https://github.com/Gururagavendra/tuxmate-cli)** – CLI companion for tuxmate, uses tuxmate's package database
+
+</details>
+
 <div align="right">
 
 ## 📜 License
