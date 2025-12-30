@@ -138,6 +138,25 @@ export function useKeyboardNavigation(
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, [navItems, focusPos, onToggleCategory, onToggleApp]);
 
+    /* Scroll focused item into view automatically */
+    useEffect(() => {
+        if (!focusPos) return;
+
+        const item = navItems[focusPos.col]?.[focusPos.row];
+        if (!item) return;
+
+        const el = document.querySelector<HTMLElement>(
+            `[data-nav-id="${item.type}:${item.id}"]`
+        );
+
+        if (!el) return;
+        
+        el.scrollIntoView({
+            block: 'nearest',
+            inline: 'nearest',
+        });
+    }, [focusPos, navItems]);
+    
     return {
         focusPos,
         focusedItem,

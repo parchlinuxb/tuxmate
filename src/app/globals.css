@@ -75,6 +75,10 @@ body::before {
     border-radius: 3px;
 }
 
+[data-nav-id] {
+    scroll-margin: 200px;
+}
+
 html {
     scroll-behavior: smooth;
 }

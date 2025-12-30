@@ -74,6 +74,7 @@ export const AppItem = memo(function AppItem({
 
     return (
         <div
+            data-nav-id={`app:${app.id}`}
             role="checkbox"
             aria-checked={isSelected}
             aria-label={`${app.name}${!isAvailable ? ' (unavailable)' : ''}`}

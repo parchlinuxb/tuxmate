@@ -43,6 +43,7 @@ export function CategoryHeader({
 }) {
     return (
         <button
+            data-nav-id={`category:${category}`}
             onClick={(e) => { e.stopPropagation(); onFocus?.(); onToggle(); }}
             tabIndex={-1}
             aria-expanded={isExpanded}
