@@ -4,7 +4,7 @@ import { Github } from 'lucide-react';
 import { analytics } from '@/lib/analytics';
 
 // GitHub logo that links to the repo
-export function GitHubLink({ href = "https://github.com/abusoww/tuxmate" }: { href?: string }) {
+export function GitHubLink({ href = "https://github.com/abusoww/tuxmate", label = "Github" }: { href?: string, label?: string }) {
     return (
         <a
             href={href}
@@ -16,7 +16,7 @@ export function GitHubLink({ href = "https://github.com/abusoww/tuxmate" }: { hr
         >
             <Github className="w-4 h-4 transition-transform duration-300 group-hover:rotate-12" />
             <span className="hidden sm:inline relative">
-                GitHub
+                {label}
                 <span className="absolute bottom-0 left-0 w-0 h-px bg-[var(--text-muted)] transition-[width] duration-300 group-hover:w-full" />
             </span>
         </a>

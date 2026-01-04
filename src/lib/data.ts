@@ -47,14 +47,14 @@ const vs = (name: string) => icon('vscode-icons', name);  // VS Code Icons (colo
 const mdi = (name: string, color?: string) => icon('mdi', name, color); // Material Design Icons
 
 export const distros: Distro[] = [
-    { id: 'ubuntu', name: 'Ubuntu', iconUrl: si('ubuntu', '#E95420'), color: '#E95420', installPrefix: 'sudo apt install -y' },
-    { id: 'debian', name: 'Debian', iconUrl: si('debian', '#A81D33'), color: '#A81D33', installPrefix: 'sudo apt install -y' },
-    { id: 'arch', name: 'Arch', iconUrl: si('archlinux', '#1793D1'), color: '#1793D1', installPrefix: 'sudo pacman -S --needed --noconfirm' },
-    { id: 'fedora', name: 'Fedora', iconUrl: si('fedora', '#51A2DA'), color: '#51A2DA', installPrefix: 'sudo dnf install -y' },
-    { id: 'opensuse', name: 'OpenSUSE', iconUrl: si('opensuse', '#73BA25'), color: '#73BA25', installPrefix: 'sudo zypper install -y' },
-    { id: 'nix', name: 'Nix', iconUrl: si('nixos', '#5277C3'), color: '#5277C3', installPrefix: 'nix-env -iA nixpkgs.' },
-    { id: 'flatpak', name: 'Flatpak', iconUrl: si('flatpak', '#4A90D9'), color: '#4A90D9', installPrefix: 'flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install flathub -y' },
-    { id: 'snap', name: 'Snap', iconUrl: si('snapcraft', '#82BEA0'), color: '#82BEA0', installPrefix: 'sudo snap install' },
+    { id: 'arch', name: 'Parch', iconUrl: si('archlinux', '#1793D1'), color: '#1793D1', installPrefix: 'sudo pacman -S --needed --noconfirm' },
+    // { id: 'ubuntu', name: 'Ubuntu', iconUrl: si('ubuntu', '#E95420'), color: '#E95420', installPrefix: 'sudo apt install -y' },
+    // { id: 'debian', name: 'Debian', iconUrl: si('debian', '#A81D33'), color: '#A81D33', installPrefix: 'sudo apt install -y' },
+    // { id: 'fedora', name: 'Fedora', iconUrl: si('fedora', '#51A2DA'), color: '#51A2DA', installPrefix: 'sudo dnf install -y' },
+    // { id: 'opensuse', name: 'OpenSUSE', iconUrl: si('opensuse', '#73BA25'), color: '#73BA25', installPrefix: 'sudo zypper install -y' },
+    // { id: 'nix', name: 'Nix', iconUrl: si('nixos', '#5277C3'), color: '#5277C3', installPrefix: 'nix-env -iA nixpkgs.' },
+    // { id: 'flatpak', name: 'Flatpak', iconUrl: si('flatpak', '#4A90D9'), color: '#4A90D9', installPrefix: 'flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install flathub -y' },
+    // { id: 'snap', name: 'Snap', iconUrl: si('snapcraft', '#82BEA0'), color: '#82BEA0', installPrefix: 'sudo snap install' },
 ];
 
 export const apps: AppData[] = [

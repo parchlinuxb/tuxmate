@@ -39,7 +39,7 @@ const STORAGE_KEY_YAY = 'linuxinit_yay_installed';
 const STORAGE_KEY_HELPER = 'linuxinit_selected_helper';
 
 export function useLinuxInit(): UseLinuxInitReturn {
-    const [selectedDistro, setSelectedDistroState] = useState<DistroId>('ubuntu');
+    const [selectedDistro, setSelectedDistroState] = useState<DistroId>('arch');
     const [selectedApps, setSelectedApps] = useState<Set<string>>(new Set());
     const [hasYayInstalled, setHasYayInstalled] = useState(false);
     const [selectedHelper, setSelectedHelper] = useState<'yay' | 'paru'>('yay');

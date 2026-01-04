@@ -27,6 +27,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         if (saved && saved !== theme) {
             setTheme(saved)
             document.documentElement.classList.toggle('light', saved === 'light')
+        } 
+        if (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            setTheme('dark')
+            document.documentElement.classList.toggle('light', false)
         }
         setHydrated(true)
     }, [])

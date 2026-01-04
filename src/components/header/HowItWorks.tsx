@@ -114,7 +114,7 @@ export function HowItWorks() {
                             <HelpCircle className="w-5 h-5 text-[var(--accent)]" />
                         </div>
                         <div>
-                            <h3 id="how-it-works-title" className="text-lg font-semibold text-[var(--text-primary)]">How TuxMate Works</h3>
+                            <h3 id="how-it-works-title" className="text-lg font-semibold text-[var(--text-primary)]">How ParchMate Works</h3>
                             <p className="text-xs text-[var(--text-muted)]">Quick guide &amp; keyboard shortcuts</p>
                         </div>
                     </div>
@@ -134,18 +134,14 @@ export function HowItWorks() {
                         <div className="space-y-3">
                             <div className="flex gap-3">
                                 <div className="w-5 h-5 rounded-full bg-[var(--accent)]/20 flex items-center justify-center text-[10px] font-bold text-[var(--accent)] shrink-0">1</div>
-                                <p className="text-sm text-[var(--text-secondary)]">Select your distro from the dropdown</p>
-                            </div>
-                            <div className="flex gap-3">
-                                <div className="w-5 h-5 rounded-full bg-[var(--accent)]/20 flex items-center justify-center text-[10px] font-bold text-[var(--accent)] shrink-0">2</div>
                                 <p className="text-sm text-[var(--text-secondary)]">Check the apps you want to install</p>
                             </div>
                             <div className="flex gap-3">
-                                <div className="w-5 h-5 rounded-full bg-[var(--accent)]/20 flex items-center justify-center text-[10px] font-bold text-[var(--accent)] shrink-0">3</div>
+                                <div className="w-5 h-5 rounded-full bg-[var(--accent)]/20 flex items-center justify-center text-[10px] font-bold text-[var(--accent)] shrink-0">2</div>
                                 <p className="text-sm text-[var(--text-secondary)]">Copy the command or download the script</p>
                             </div>
                             <div className="flex gap-3">
-                                <div className="w-5 h-5 rounded-full bg-[var(--accent)]/20 flex items-center justify-center text-[10px] font-bold text-[var(--accent)] shrink-0">4</div>
+                                <div className="w-5 h-5 rounded-full bg-[var(--accent)]/20 flex items-center justify-center text-[10px] font-bold text-[var(--accent)] shrink-0">3</div>
                                 <p className="text-sm text-[var(--text-secondary)]">Paste in terminal (<code className="text-xs bg-[var(--bg-tertiary)] px-1 py-0.5 rounded">Ctrl+Shift+V</code>) and run</p>
                             </div>
                         </div>
@@ -159,11 +155,7 @@ export function HowItWorks() {
                             <ul className="space-y-2 ml-2">
                                 <li className="flex gap-2">
                                     <span className="text-[var(--accent)]">•</span>
-                                    <span><strong className="text-[var(--text-secondary)]">Use Flatpak/Snap:</strong> Switch to Flatpak or Snap in the distro selector for universal packages</span>
-                                </li>
-                                <li className="flex gap-2">
-                                    <span className="text-[var(--accent)]">•</span>
-                                    <span><strong className="text-[var(--text-secondary)]">Download from website:</strong> Visit the app&apos;s official site and grab the <code className="bg-[var(--bg-tertiary)] px-1 rounded">.deb</code>, <code className="bg-[var(--bg-tertiary)] px-1 rounded">.rpm</code>, or <code className="bg-[var(--bg-tertiary)] px-1 rounded">.AppImage</code></span>
+                                    <span><strong className="text-[var(--text-secondary)]">Download from website:</strong> Visit the app&apos;s official site and grab the <code className="bg-[var(--bg-tertiary)] px-1 rounded">.AppImage</code></span>
                                 </li>
                                 <li className="flex gap-2">
                                     <span className="text-[var(--accent)]">•</span>
@@ -175,10 +167,10 @@ export function HowItWorks() {
 
                     {/* Arch & AUR */}
                     <div className="pt-3 border-t border-[var(--border-primary)]">
-                        <h4 className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">Arch Linux &amp; AUR</h4>
+                        <h4 className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">AUR</h4>
                         <p className="text-xs text-[var(--text-muted)] leading-relaxed">
                             Some Arch packages are in the <strong className="text-[var(--text-secondary)]">AUR</strong> (Arch User Repository).
-                            TuxMate uses <code className="bg-[var(--bg-tertiary)] px-1 rounded">yay</code> or <code className="bg-[var(--bg-tertiary)] px-1 rounded">paru</code> to install these.
+                            ParchMate uses <code className="bg-[var(--bg-tertiary)] px-1 rounded">yay</code> or <code className="bg-[var(--bg-tertiary)] px-1 rounded">paru</code> to install these.
                             When selecting AUR packages, a popup will ask which helper you have. You can switch between helpers anytime using <kbd className="px-1 py-0.5 bg-[var(--bg-tertiary)] rounded text-[10px]">1</kbd> (yay) or <kbd className="px-1 py-0.5 bg-[var(--bg-tertiary)] rounded text-[10px]">2</kbd> (paru).
                         </p>
                     </div>
@@ -253,14 +245,6 @@ export function HowItWorks() {
                             <li className="flex gap-2">
                                 <span className="text-emerald-500">💡</span>
                                 <span>Your selections are <strong className="text-[var(--text-secondary)]">saved automatically</strong> — come back anytime to modify your setup</span>
-                            </li>
-                            <li className="flex gap-2">
-                                <span className="text-emerald-500">💡</span>
-                                <span>Running <code className="bg-[var(--bg-tertiary)] px-1 rounded">.deb</code> files: <code className="bg-[var(--bg-tertiary)] px-1 rounded">sudo dpkg -i file.deb</code></span>
-                            </li>
-                            <li className="flex gap-2">
-                                <span className="text-emerald-500">💡</span>
-                                <span>Running <code className="bg-[var(--bg-tertiary)] px-1 rounded">.rpm</code> files: <code className="bg-[var(--bg-tertiary)] px-1 rounded">sudo dnf install ./file.rpm</code></span>
                             </li>
                         </ul>
                     </div>

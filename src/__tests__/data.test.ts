@@ -3,18 +3,6 @@ import { distros, apps, categories, getAppsByCategory, isAppAvailable } from '@/
 
 describe('Data Module', () => {
     describe('distros', () => {
-        it('should have all expected distros', () => {
-            const distroIds = distros.map(d => d.id);
-            expect(distroIds).toContain('ubuntu');
-            expect(distroIds).toContain('debian');
-            expect(distroIds).toContain('arch');
-            expect(distroIds).toContain('fedora');
-            expect(distroIds).toContain('opensuse');
-            expect(distroIds).toContain('nix');
-            expect(distroIds).toContain('flatpak');
-            expect(distroIds).toContain('snap');
-        });
-
         it('should have valid install prefixes', () => {
             distros.forEach(distro => {
                 expect(distro.installPrefix).toBeTruthy();

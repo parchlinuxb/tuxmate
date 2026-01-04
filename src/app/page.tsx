@@ -30,7 +30,6 @@ export default function Home() {
     const {
         selectedDistro,
         selectedApps,
-        setSelectedDistro,
         toggleApp,
         clearAll,
         isAppAvailable,
@@ -209,12 +208,12 @@ export default function Home() {
                             <div className="flex items-start gap-4">
                                 <img
                                     src="/tuxmate.png"
-                                    alt="TuxMate Logo"
+                                    alt="ParchMate Logo"
                                     className="w-16 h-16 sm:w-[72px] sm:h-[72px] object-contain shrink-0"
                                 />
                                 <div className="flex flex-col justify-center">
                                     <h1 className="text-xl sm:text-2xl font-bold tracking-tight" style={{ transition: 'color 0.5s' }}>
-                                        TuxMate
+                                        ParchMate
                                     </h1>
                                     <p className="text-[10px] sm:text-xs text-[var(--text-muted)] uppercase tracking-widest" style={{ transition: 'color 0.5s' }}>
                                         The Linux Bulk App Installer.
@@ -234,7 +233,8 @@ export default function Home() {
                         <div className="header-controls flex items-center gap-3 sm:gap-4">
                             {/* Links */}
                             <div className="flex items-center gap-3 sm:gap-4">
-                                <GitHubLink />
+                                <GitHubLink href="https://github.com/parchlinuxb/tuxmate" label="Parch Repo"  />
+                                <GitHubLink label="Original" />
                                 <ContributeLink />
                                 {selectedCount > 0 && (
                                     <>
@@ -256,7 +256,6 @@ export default function Home() {
                             {/* Control buttons */}
                             <div className="flex items-center gap-2 pl-2 sm:pl-3 border-l border-[var(--border-primary)]">
                                 <ThemeToggle />
-                                <DistroSelector selectedDistro={selectedDistro} onSelect={setSelectedDistro} />
                             </div>
                         </div>
                     </div>

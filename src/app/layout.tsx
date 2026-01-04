@@ -14,18 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TuxMate - Linux App Installer Command Generator",
-  description: "TuxMate helps you generate terminal commands to install your favorite apps on any Linux distribution. Select your distro, pick your apps, and get your install command.",
+  title: "ParchMate - Linux App Installer Command Generator",
+  description: "ParchMate helps you generate terminal commands to install your favorite apps on ParchLinux distribution. Pick your apps, and get your install command.",
   openGraph: {
-    title: "TuxMate - Linux App Installer",
-    description: "Generate install commands for 180+ apps on Ubuntu, Debian, Arch, Fedora, and more.",
+    title: "ParchMate - Linux App Installer",
+    description: "Generate install commands for 180+ apps on ParchLinux.",
     type: "website",
-    url: "https://tuxmate.abusov.com",
+    url: "https://mate.parchlinux.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TuxMate - Linux App Installer",
-    description: "Generate install commands for 180+ apps on any Linux distro.",
+    title: "ParchMate - Linux App Installer",
+    description: "Generate install commands for 180+ apps on ParchLinux distro.",
   },
 };
 
@@ -52,13 +52,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        {umamiId && (
+        <script>{themeScript}</script>
+        {/* {umamiId && (
           <script defer src="https://cloud.umami.is/script.js" data-website-id={umamiId} />
         )}
         {cfBeacon && (
           <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={`{"token": "${cfBeacon}"}`} />
-        )}
+        )} */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

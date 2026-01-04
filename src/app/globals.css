@@ -3,33 +3,39 @@
 /* ===== WARM PAPER AESTHETIC THEMES ===== */
 
 :root {
-    /* Dark theme - warm charcoal with paper undertones */
-    --bg-primary: #1e1d1a;
-    --bg-secondary: #262520;
-    --bg-tertiary: #302f29;
-    --bg-hover: #3a3832;
-    --bg-focus: #454339;
-    --text-primary: #f5f3ef;
-    --text-secondary: #d8d4cc;
-    --text-muted: #a09a8e;
-    --border-primary: #3a3832;
-    --border-secondary: #454339;
-    --accent: #9a958a;
+    /* Dark theme - عمق دریا و فیروزه تیره */
+    --bg-primary: #0f1c20;      /* پس‌زمینه اصلی: تیره فیروزه‌ای خیلی تیره */
+    --bg-secondary: #16282d;    /* پس‌زمینه ثانویه: سبز دودی تیره */
+    --bg-tertiary: #1d363d;     /* پس‌زمینه ترشیاری: سبز دودی متوسط */
+    --bg-hover: #264649;        /* هاور: کمی روشن‌تر */
+    --bg-focus: #30565a;        /* فوکوس: سبز دودی رو به آبی */
+    
+    --text-primary: #e0f2f1;    /* متن اصلی: سفید مایل به فیروزه‌ای خیلی روشن */
+    --text-secondary: #b2dfdb;  /* متن ثانویه: فیروزه‌ای روشن مات */
+    --text-muted: #5eead4;      /* متن خاکستری/محو: سبز نعنایی روشن */
+    
+    --border-primary: #264649;
+    --border-secondary: #30565a;
+    
+    --accent: #2dd4bf;          /* اکسنت اصلی: فیروزه‌ای زنده و براق */
 }
 
 .light {
-    /* Light theme - warm paper/parchment */
-    --bg-primary: #f5f2ed;
-    --bg-secondary: #ebe8e2;
-    --bg-tertiary: #e0dcd4;
-    --bg-hover: #d8d4ca;
-    --bg-focus: #cec9bd;
-    --text-primary: #1a1815;
-    --text-secondary: #3a3733;
-    --text-muted: #5c5850;
-    --border-primary: #d8d4ca;
-    --border-secondary: #cec9bd;
-    --accent: #7d7970;
+    /* Light theme - کاغذ کاهی سبز و نعنایی */
+    --bg-primary: #f0fdfa;      /* پس‌زمینه اصلی: سفید مایل to نعنایی (Mint Cream) */
+    --bg-secondary: #ccfbf1;   /* پس‌زمینه ثانویه: فیروزه‌ای خیلی کمرنگ */
+    --bg-tertiary: #99f6e4;     /* پس‌زمینه ترشیاری: فیروزه‌ای پاستلی */
+    --bg-hover: #5eead4;        /* هاور: فیروزه‌ای روشن */
+    --bg-focus: #2dd4bf;        /* فوکوس: فیروزه‌ای اصلی */
+    
+    --text-primary: #134e4a;    /* متن اصلی: سبز جنگلی تیره برای کنتراست */
+    --text-secondary: #115e59;  /* متن ثانویه: سبز دودی */
+    --text-muted: #0f766e;      /* متن خاکستری/محو: سبز فیروزه‌ای تیره */
+    
+    --border-primary: #99f6e4;
+    --border-secondary: #5eead4;
+    
+    --accent: #0d9488;          /* اکسنت اصلی: سبز دودی عمیق */
 }
 
 @theme inline {
