@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Saira, Fira_Code } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/hooks/useTheme";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const saira = Saira({
+  variable: "--font-saira",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firaCode = Fira_Code({
+  variable: "--font-fira-code",
   subsets: ["latin"],
 });
 
@@ -61,7 +61,7 @@ export default function RootLayout({
         )} */}
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${saira.variable} ${firaCode.variable} antialiased`}
       >
         <ThemeProvider>
           {children}

@@ -2,6 +2,7 @@
 
 import { Check, Copy, X, Download } from 'lucide-react';
 import { AurDrawerSettings } from './AurDrawerSettings';
+import { cn } from '@/lib/utils';
 
 interface CommandDrawerProps {
     isOpen: boolean;
@@ -119,23 +120,23 @@ export function CommandDrawer({
                                 <div className="w-3 h-3 rounded-full bg-red-500/80" />
                                 <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                                 <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                                <span className="ml-2 text-xs text-[var(--text-muted)]">bash</span>
+                                <span className="ml-2 text-xs text-stone-500">bash</span>
                             </div>
                             {/* Desktop action buttons */}
                             <div className="hidden md:flex items-center gap-2">
                                 <button
                                     onClick={onDownload}
-                                    className="h-7 px-3 flex items-center gap-1.5 rounded-md bg-[var(--bg-tertiary)]/50 text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)] transition-colors text-xs font-medium"
+                                    className="h-7 px-3 flex items-center gap-1.5 rounded-md bg-[var(--bg-tertiary)]/75 text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)] transition-colors text-xs font-medium cursor-pointer"
                                 >
                                     <Download className="w-3.5 h-3.5" />
                                     Download
                                 </button>
                                 <button
                                     onClick={handleCopyAndClose}
-                                    className={`h-7 px-3 flex items-center gap-1.5 rounded-md text-xs font-medium transition-colors ${copied
+                                    className={cn('h-7 px-3 flex items-center gap-1.5 rounded-md text-xs font-medium transition-colors cursor-pointer', copied
                                         ? 'bg-emerald-600 text-white'
                                         : 'bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white'
-                                        }`}
+                                        )}
                                 >
                                     {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                                     {copied ? 'Copied!' : 'Copy'}

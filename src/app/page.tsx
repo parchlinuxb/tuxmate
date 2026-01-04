@@ -19,6 +19,7 @@ import { DistroSelector } from '@/components/distro';
 import { CategorySection } from '@/components/app';
 import { CommandFooter } from '@/components/command';
 import { Tooltip, GlobalStyles, LoadingSkeleton } from '@/components/common';
+import LogoBg from '@/components/app/LogoBg';
 
 // The main event
 
@@ -196,6 +197,7 @@ export default function Home() {
             style={{ transition: 'background-color 0.5s, color 0.5s' }}
             onClick={clearFocus}
         >
+            <LogoBg />
             <GlobalStyles />
             <Tooltip tooltip={tooltip} onEnter={onTooltipEnter} onLeave={onTooltipLeave} />
 
