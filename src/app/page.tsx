@@ -267,7 +267,7 @@ export default function Home() {
             {/* App Grid */}
             <main className="px-4 sm:px-6 pb-40 relative" style={{ zIndex: 1 }}>
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 sm:gap-x-8">
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 sm:gap-x-8">
                         {columns.map((columnCategories, colIdx) => {
                             // Calculate starting index for this column (for staggered animation)
                             let globalIdx = 0;

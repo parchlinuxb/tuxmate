@@ -1,7 +1,7 @@
 export default function LogoBg() {
   return (
     <svg
-      className="w-[50vw] h-[50vh] opacity-10 fixed bottom-0 left-0 z-0"
+      className="w-auto h-[50vh] opacity-10 fixed bottom-0 left-0 z-0"
       viewBox="0 0 316 316"
       xmlns="http://www.w3.org/2000/svg"
     >
